@@ -1,0 +1,127 @@
+/*
+ Theme Name:   Castle Kitchen
+ Theme URI:    http://oldcastleweb.com/pws/themes/castlekitchen
+ Description:  A child theme of Qohelet.
+ Author:       Paul Taylor
+ Author URI:   http://oldcastleweb.com
+ Template:     qohelet
+ Version:      0.1
+ License:      GNU General Public License v3 or later
+ License URI:  http://www.gnu.org/licenses/gpl-3.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  castle-kitchen
+ GitHub Theme URI: https://github.com/pftaylor61/castlekitchen
+ GitHub Branch:    master
+*/
+
+/* Remember that the theme uses Qohelet styles, unless specifically altered here */
+
+body {
+    background-image: none;
+    background-color: #4b4843;
+}
+
+/* Header Styles */
+.site-title h1 {
+        display: inline;
+        font-size: 60px;
+        font-size: 3.75rem !important;    
+        margin-top: 10px;
+	margin-top: 0.6rem;
+        font-family: 'MedievalSharp', cursive;
+        color: #002147;
+}
+
+.site-title p {
+    color: #002147;
+}
+
+.innerwrapper {
+    background-color: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 1120px;
+    margin-top: 20px;
+    margin-top: 1.25rem;
+}
+/* The innerwrapper is divided into two parts: the castellation, and the rest. */
+
+#ck_castellation {
+    width:100%;
+    height: 20px;
+    height: 1.25rem;
+    margin: 0;
+    padding: 0;
+   
+}
+
+#ck_castellation_media_600 {
+    height: 0;
+}
+
+
+/* The section below is to define the image of the castellation. It can be replaced, when the screen is smaller */
+.ck_castle_image{
+    width:100%;
+    height: 100%;
+}
+
+#ck_rest_innerwrapper {
+    width:100%;
+    background-color: #f7f7f7;
+    padding-top: 10px;
+    padding-top: 0.6rem;
+}
+
+
+
+/* Media Query codes begin here */
+@media only screen and (max-width: 600px) {
+    #ck_castellation {
+        height: 0;
+    }
+    
+    #ck_castellation_media_600 {
+        width:100%;
+        height: 15px;
+        height: 0.88rem;
+        margin: 0;
+        padding: 0;
+   
+    }
+    
+    .site-title h1 {
+        display: inline;
+        font-size: 30px;
+        font-size: 1.87rem !important;    
+        margin-top: 5px;
+	margin-top: 0.25rem;
+        font-family: 'MedievalSharp', cursive;
+        color: #002147;
+    }
+}
+
+.row1 {
+    width:100%;
+}
+
+.row2 {
+    width:100%;
+    
+}
+
+.main-navigation {
+    margin: 0 0 0 0;
+    margin: 0 0 0 0; 
+}
+
+.banner {
+	color: #eaeaea;
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1px 0;
+	padding: 0.0625rem 0;
+	min-height: 0;
+}
